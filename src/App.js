@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Seamex  from './components/SeamexHeader'; 
+import Card1 from './components/card1';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Customer Portal</h1>
+      <Seamex></Seamex>
+      <Card1 title="Manage Hire-To-Retire Lifecycle"
+        description="This is the card description. You can add more information here."
+        image="/assets/card_1.jpg"/>
+
+<footer id="ft1">
+        <p>&copy; 2023 Seamex ABMCPL</p>
+    </footer>
     </div>
   );
 }

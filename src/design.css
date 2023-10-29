@@ -1,0 +1,41 @@
+
+
+.container{
+    color: rgb(255, 179, 0);
+    font-size: 50 px;
+
+
+}
+
+#par1{
+    color: rgb(27, 20, 13);
+    font-size: 100 px;
+
+}
+
+#div1{
+    width: 900px ;
+    height: 200 px;
+    background-color: #4686e5;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-top: 10px;
+    color: #511a1a;
+    padding: 10px;
+    
+}
+#p1{ 
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #baa2b1;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+#ft1{
+    background-color: #333;
+    color: #ffffff;
+    text-align: end;
+    padding: 20px;
+    margin-top: 350px;
+}
