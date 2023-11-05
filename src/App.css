@@ -1,5 +1,17 @@
+/* For EventCard */
+
+.app {
+  text-align: center;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -11,6 +23,18 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  height: 180vh; /* Ensure the container covers the full viewport height */
+}
+.card-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 150px;
 }
 
 .App-header {

@@ -1,0 +1,48 @@
+body {
+    overflow: auto; /* Enable scrolling by default */
+  }
+  
+.restaurant-card {
+    position: relative;
+  }
+  
+  .restaurant-card:not(.expanded) {
+    display: block;
+  }
+  
+
+  .restaurant-expanded-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .restaurant-expanded-content {
+    background: #060404;
+    color: #fff;
+    max-width: 60%; /* Adjust the width as needed */
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  
+  /* Styling for the close button in RestaurantExpandedCard */
+  .restaurant-expanded-content button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .restaurant-expanded-content button:hover {
+    background-color: #0056b3;
+  }
+  

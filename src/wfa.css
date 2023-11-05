@@ -1,0 +1,22 @@
+ .restaurant-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .restaurant-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cuisine-cost {
+    margin-top: 10px;
+  }
+  
+  .restaurant-details {
+    margin-top: 10px;
+    position: relative;
+
+  }
+  

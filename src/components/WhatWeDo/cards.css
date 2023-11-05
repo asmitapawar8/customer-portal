@@ -1,0 +1,83 @@
+.card {
+  border: 1px solid #ed1919;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: rgb(251, 215, 215);
+  margin: 20px;
+  width: 300px;
+}
+
+/* .card:hover {
+  transform: scale(1.4);
+  transition-timing-function:ease-in-out  
+} */
+
+/* Image styles */
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Card content styles */
+.card-content {
+  padding: 15px;
+}
+
+/* Title styles */
+.card-content h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Description styles */
+.card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  /* max-height: 1000px; /* Limit the height for short description */
+  /* overflow: hidden;  */
+  transition: max-height 0.3s ease-in;
+}
+.expanded-description {
+  font-size: 16px; /* Larger font size for the expanded description */
+  max-height: none; /* Remove the max height to allow expansion */
+  overflow: visible; /* Allow content to be visible */
+}
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+/* .button:hover {
+  background-color: #0056b3;
+} */
+
+/* #card {
+  border: 5px solid #ff8181;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-left: 20px;
+  width: 330px;
+  height:40 px;
+  text-align: center;
+  overflow: hidden;   /* Clip any content that overflows the card */
+
+
+
+/* #img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+} */ 
+

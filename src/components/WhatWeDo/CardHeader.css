@@ -1,0 +1,44 @@
+/* Service Card Styles */
+.card-container {
+    display: flex; /* Use flexbox to arrange cards in a row */
+    justify-content: space-around; /* Adjust alignment as needed */
+    align-items: center;
+    gap: 10px; /* Add space between cards */
+}
+
+/* Service Card Styles */
+.service-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    background: rgb(241, 235, 223);
+    color: rgb(11, 13, 14);
+    text-decoration:dotted;
+    border-width: 6px; /* top right bottom left */
+border-style: solid  groove double;
+border-color: red green blue yellow;
+    border-radius: 25px; /* Remove border radius for rectangular shape */
+    text-align: start;
+    transition: transform 0.2s;
+    width: auto; /* Allow the width to adjust based on content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.service-card:hover {
+    transform: scale(1.5);
+    transition-property: unset;
+    transition-timing-function: ease-in-out;
+    background: rgb(192, 197, 249);
+
+}
+
+.service-card h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.service-card p {
+    font-size: 1rem;
+}

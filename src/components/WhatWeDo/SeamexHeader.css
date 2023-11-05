@@ -1,0 +1,131 @@
+.about-us-container {
+    color: #1d8585;
+    padding: 20px;
+    text-align: center;
+  }
+  .about-us-content {
+    background-color: rgb(255, 16, 16);
+    background: linear-gradient(to bottom, #e3c034, #f62217 ); 
+  border: rgb(221, 120, 120) 100 px solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  margin-top: 8%;
+  margin-left: 22%;
+  margin-right: 22%;
+
+  /* margin: 0 auto; */
+}
+
+  #h1{
+    color: #6c1616;
+    /* font-size: 24px; Adjust the value as needed */
+
+    }
+#click{
+font-size: 5px;
+}
+#p1{
+    font-family: "Helvetica Neue";
+    color: rgb(56, 53, 53);
+    font-variant:initial;
+    font-size: 21px;
+
+}
+
+
+.service-areas-header {
+  color: #101112; /* Default text color */
+  padding: 20px; /* Padding for spacing */
+  margin-top: 5%;
+  margin-left: 700px;
+  margin-right: 700px;
+  border-radius: 10px;
+  text-align: center; /* Center the text */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #ea900b;
+  
+  align-items: center;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Add a smooth transition for color and background changes */
+}
+
+.service-areas-header:hover {
+  color: #1f1818; /* Text color on hover */
+  background-color: #f2571a; /* Background color on hover */
+  transform: scale(1.2);
+
+
+}
+  .star-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    position: relative;
+    margin-top: 500px;
+  }
+  
+  .left-cards,
+  .right-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .service-card {
+    width: 100px;
+    height: 100px;
+    background-color: #aebfd1; /* Surrounding Card Background Color */
+    border-radius: 50%;
+    margin: 100px; /* Add margin to increase spacing */
+  }
+  
+  .center-card {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 2;
+    margin: 100px; /* Add margin to increase spacing */
+  }
+  
+  
+/* .container{
+    color: rgb(255, 179, 0);
+    font-size: 50 px;
+
+
+}
+
+#par1{
+    color: rgb(27, 20, 13);
+    font-size: 100 px;
+
+}
+
+#div1{
+    width: 900px ;
+    height: 200 px;
+    background-color: #4686e5;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-top: 10px;
+    color: #511a1a;
+    padding: 10px;
+    
+}
+#p1{ 
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #baa2b1;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+#ft1{
+    background-color: #333;
+    color: #ffffff;
+    text-align: end;
+    padding: 20px;
+    margin-top: 350px;
+} */
