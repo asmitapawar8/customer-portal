@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import '../wfa.css';
 import MoreInfo from './WhatWeDo/MoreInfo';
-import RestaurantExpandedCard  from './WhatWeDo/RestaurantExpandedCard';
+import ServiceExpandedCard  from './WhatWeDo/ServiceExpandedCard';
 
-const RestaurantCard = ({ restaurant }) => {
+const ServiceType = ({ service }) => {
   const [showExpanded, setShowExpanded] = useState(false);
 
 
@@ -19,15 +19,14 @@ const RestaurantCard = ({ restaurant }) => {
   };
 
   return (
-    <div className="restaurant-card">
+    <div className="services-card">
       {!showExpanded && (
         <div>
-      <img src={restaurant.photo} alt={restaurant.name} />
-      <h2>{restaurant.name}</h2>
+      <img src={service.photo} alt={service.name} />
+      <h2>{service.name}</h2>
       <p className="cuisine-cost">
-        {restaurant.cuisine}
         <br />
-        Estimated Cost for 2: {restaurant.estimatedCost}
+        Aim: {service.aim}
       </p>
       <button onClick={toggleExpanded}>
             Know More
@@ -35,10 +34,10 @@ const RestaurantCard = ({ restaurant }) => {
         </div>
       )}
       {showExpanded && (
-        <RestaurantExpandedCard restaurant={restaurant} onClose={toggleExpanded} />
+        <ServiceExpandedCard service={service} onClose={toggleExpanded} />
       )}
     </div>
     );
 };
 
-export default RestaurantCard;  
+export default ServiceType;  

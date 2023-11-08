@@ -1,69 +1,139 @@
+/*event heading*/
+
+h3{
+    background-color: #ffe17e; /* Background color of the heading box */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 24px; /* Font size of the heading */
+    text-align: center; /* Center align the heading */
+    margin: 20px 0; /* Margin around the heading box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift effect */
+  }
+
 /* Media.css */
 .app {
     text-align: center;
   }
   
   h1 {
-    font-size: 24px;
-    margin: 20px;
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #f3e4e4; /* Text color */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Adjust margin for spacing */
+    text-transform: uppercase; /* Uppercase text */
   }
-  
+  h1::after{
+    content: '';
+  display: block;
+  width: 500px; /* Adjust the underline width */
+  height: 3px; /* Adjust the underline thickness */
+  background-color: #5a3d3d; /* Underline color */
+  margin: 10px auto; /* Center the underline */
+  }
+  .event-card h3 {
+  font-size: 25px;
+  margin: 10px 0;
+  color: #333;
+  position: relative;
+}
+.event-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap; /* Added property */
+  gap: 20px; /* Add some space between the cards */
+  position: relative; /* Add this for position context */
+}
+
+
+.event-card h3::after {
+  content: "             ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+ 
   .event-list {
     display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 50px; 
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
   }
+
+.fullSize{
+  font-style: italic;
+  padding:2px;
+  margin: 5px;
+  font-size: 0.3cm;
+  background-color: rgb(95, 124, 138);
+  width: 100px;
+}
   
-  .event-card {
-    background: #f9f9f9;
-    border: 1px solid #e4e4e4;
-    border-radius: 5px;
-    padding: 15px;
-    max-width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-    text-align: left;
-  }
-  
-  .event-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .event-card h3 {
-    font-size: 18px;
-    margin: 0;
-    color: #333;
-  }
-  .event-card {
-    /* ... (previous styles) */
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-  }
-  
+/* CSS for the event cards */
+.event-card {
+  background-color: #fff; /* Background color of the card */
+  border: 1px solid #ddd; /* Border style for the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+  padding: 20px; /* Spacing inside the card */
+  margin: 10px; /* Margin between cards */
+  margin-bottom: 100px;
+  max-width: 300px; /* Maximum width of the card */
+  text-align: center; /* Center align card content */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition for hover effect */
+  min-height: 200px;
+}
+
+.event-card:hover {
+  transform: translateY(-5px); /* Move the card slightly up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Header style */
+.event-card h3 {
+  font-size: 20px; /* Title font size */
+  margin: 10px 0; /* Title margin */
+}
+
+/* Image style */
+.event-card img {
+  max-width: 100%; /* Ensure the image fits inside the card */
+  height: 100%; /* Maintain image aspect ratio */
+  object-fit: cover;
+  margin: 10px 0; /* Space between the image and other content */
+}
+
+/* Description style */
+.event-card p {
+  font-size: 14px; /* Description font size */
+  margin: 10px 0; /* Description margin */
+}
+
   .event-card:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
-  
-  .event-card p {
-    font-size: 14px;
-    margin: 10px 0;
-    color: #666;
-  }
-  
   .small-image {
     max-width: 100%;
-    height: auto;
+    height: 150px; /* Set a fixed height for consistent alignment */
+
+    object-fit: cover; /* This ensures the image covers the entire height */
     cursor: pointer;
     transition: transform 0.2s;
+    border: solid rgb(202, 142, 73) 2px;
   }
   
   .small-image:hover {
-    transform: scale(1.1);
+    transform: translateY(0); /* Remove the scale effect */
   }
   
   .expanded-image {
@@ -80,26 +150,23 @@
   }
   
   .expanded-image img {
-    max-width: 80%;
-    max-height: 80%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    max-height: 90vh; /* 90% of the viewport height */
+    border-radius: 10px; /* Rounded corners for the expanded image */
+    border: 4px solid rgb(91, 91, 91);
   }
   
   .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    background: transparent;
+    position:absolute;
+    top: 250px;
+    right: 650px;
+    background:crimson;
     border: none;
     color: #fff;
     cursor: pointer;
   }
   
-  .close-button:focus {
-    outline: none;
-  }
-  
+ 
   @media (max-width: 768px) {
     .event-list {
       flex-direction: column;

@@ -11,7 +11,7 @@ import Services from './components/Services/Services';
 import Card2 from './components/WhatWeDo/card2'
 import Card3 from './components/card3';
 import Card4 from './components/WhatWeDo/CardHeader';
-import RestaurantCard from './components/wfa';
+import RestaurantCard from './components/ServiceCards';
 
 
 const App = () => {

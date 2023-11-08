@@ -2,16 +2,16 @@ body {
     overflow: auto; /* Enable scrolling by default */
   }
   
-.restaurant-card {
+.service-card {
     position: relative;
   }
   
-  .restaurant-card:not(.expanded) {
+  .service-card:not(.expanded) {
     display: block;
   }
   
 
-  .restaurant-expanded-card {
+  .service-expanded-card {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,17 +24,17 @@ body {
     z-index: 1000;
   }
   
-  .restaurant-expanded-content {
-    background: #060404;
-    color: #fff;
+  .service-expanded-content {
+    background: #d4d4d4;
+    color: #423e3e;
     max-width: 60%; /* Adjust the width as needed */
     padding: 20px;
     border-radius: 30px;
     text-align: center;
   }
   
-  /* Styling for the close button in RestaurantExpandedCard */
-  .restaurant-expanded-content button {
+  /* Styling for the close button in serviceExpandedCard */
+  .service-expanded-content button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -42,7 +42,7 @@ body {
     margin-top: 10px;
   }
   
-  .restaurant-expanded-content button:hover {
+  .service-expanded-content button:hover {
     background-color: #0056b3;
   }
   

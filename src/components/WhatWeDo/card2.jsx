@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../WhatWeDo/cards.css'; // Import your CSS file
+import '../WhatWeDo/card2.css'; // Import your CSS file
 
 const Card2 = (props) => {
   const [expanded, setExpanded] = useState(false);
