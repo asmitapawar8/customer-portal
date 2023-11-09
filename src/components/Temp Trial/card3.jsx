@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../card3.css'; // Import your CSS file
+import './card3.css'; // Import your CSS file
 import Modal from './modal'; // Import the Modal component
 
 const Card3 = (props) => {

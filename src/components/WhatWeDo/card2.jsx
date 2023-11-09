@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../WhatWeDo/card2.css'; // Import your CSS file
+import './SeamexHeader.css';
 
 const Card2 = (props) => {
   const [expanded, setExpanded] = useState(false);

@@ -5,13 +5,11 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Seamex  from './components/WhatWeDo/SeamexHeader'; 
 import Media from './components/Gallery/Media';
-import Services from './components/Services/Services';
 
-// import Card1 from './components/card1';
 import Card2 from './components/WhatWeDo/card2'
-import Card3 from './components/card3';
+import Card3 from './components/Temp Trial/card3';
 import Card4 from './components/WhatWeDo/CardHeader';
-import RestaurantCard from './components/ServiceCards';
+import RestaurantCard from './components/WhatWeDo/ServiceCards';
 
 
 const App = () => {
@@ -20,7 +18,7 @@ const App = () => {
       <Header />
       <Routes>
      < Route path="/media" element={<Media/>} />
-     <Route path="/servicesWWD" element={<Services/>}/>
+      <Route path="/servicesWWD" element={<Seamex/>}/>
 
         {/* <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -29,7 +27,6 @@ const App = () => {
         <Route path="/media" element={<Media />} />
         <Route path="*" element={<Nopage />} /> */}
       </Routes>
-      {/* <Seamex></Seamex> */}
       <Footer/>
     </Router>
   );

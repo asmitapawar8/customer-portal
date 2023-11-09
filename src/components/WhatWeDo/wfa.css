@@ -1,16 +1,51 @@
-body {
+ /* .services-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .services-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .aim-cost {
+    margin-top: 10px;
+  }
+  
+  .service-details {
+    margin-top: 10px;
+    position: relative;
+
+  }
+   */
+
+   body {
     overflow: auto; /* Enable scrolling by default */
   }
   
-.service-card {
+  .services-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .services-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .aim-cost {
+    margin-top: 10px;
+  }
+  
+  .service-details {
+    margin-top: 10px;
     position: relative;
   }
   
-  .service-card:not(.expanded) {
-    display: block;
-  }
-  
-
   .service-expanded-card {
     position: fixed;
     top: 0;
@@ -44,5 +79,9 @@ body {
   
   .service-expanded-content button:hover {
     background-color: #0056b3;
+  }
+  
+  .services-card:not(.expanded) {
+    display: block;
   }
   

@@ -93,43 +93,57 @@ font-size: 5px;
     margin: 100px; /* Add margin to increase spacing */
   }
   
+  .card {
+    border: 1px solid #ed1919;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: rgb(251, 215, 215);
+    margin-left: 200px;
+    width: 300px;
+  }
   
-/* .container{
-    color: rgb(255, 179, 0);
-    font-size: 50 px;
-
-
-}
-
-#par1{
-    color: rgb(27, 20, 13);
-    font-size: 100 px;
-
-}
-
-#div1{
-    width: 900px ;
-    height: 200 px;
-    background-color: #4686e5;
-    border-radius: 25px;
-    margin-left: 20%;
-    margin-top: 10px;
-    color: #511a1a;
-    padding: 10px;
-    
-}
-#p1{ 
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: #baa2b1;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-#ft1{
-    background-color: #333;
-    color: #ffffff;
-    text-align: end;
-    padding: 20px;
-    margin-top: 350px;
-} */
+  /* Image styles */
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Card content styles */
+  .card-content {
+    padding: 15px;
+  }
+  
+  /* Title styles */
+  .card-content h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Description styles */
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    /* max-height: 1000px; /* Limit the height for short description */
+    /* overflow: hidden;  */
+    transition: max-height 0.3s ease-in;
+  }
+  .expanded-description {
+    font-size: 16px; /* Larger font size for the expanded description */
+    max-height: none; /* Remove the max height to allow expansion */
+    overflow: visible; /* Allow content to be visible */
+  }
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
